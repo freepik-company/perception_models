@@ -167,7 +167,7 @@ PLM releases models in three different sizes (1B, 3B and 8B).
 > [!TIP]
 > See [`apps/plm/README.md`](apps/plm/README.md) for details and how to get started!
 
-## Datasets releases
+## Datasets Releases
 
 
 ### 🎥 [PE-Video-Dataset (PVD)](https://huggingface.co/datasets/facebook/PE-Video)
@@ -177,7 +177,11 @@ PVD comprises 1M high quality and diverse videos. Among them, 120K videos are ac
 
 🔹 [**PVD**](https://huggingface.co/datasets/facebook/PE-Video) - 1M High-Quality Human Annotated Video Dataset 
 
+![output_2](https://github.com/user-attachments/assets/ead8a7ed-4d5b-465a-a396-68948683dfcf) 
+![output](https://github.com/user-attachments/assets/9e509e49-f550-4c5c-9571-ed57c5118227)
+
 ---
+
 
 ### 🎥 [PLM-Video-Human](https://huggingface.co/datasets/facebook/PLM-Video-Human)
 
