@@ -177,8 +177,21 @@ PVD comprises 1M high quality and diverse videos. Among them, 120K videos are ac
 
 🔹 [**PVD**](https://huggingface.co/datasets/facebook/PE-Video) - 1M High-Quality Human Annotated Video Dataset 
 
-![output_2](https://github.com/user-attachments/assets/ead8a7ed-4d5b-465a-a396-68948683dfcf) 
-![output](https://github.com/user-attachments/assets/9e509e49-f550-4c5c-9571-ed57c5118227)
+<table>
+   <tr>
+    <td colspan="2" align="center"><strong>PVD</strong></td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/ead8a7ed-4d5b-465a-a396-68948683dfcf" alt="output_2" width="300"/><br>
+      A person's hands pruning a plant with green leaves.
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/9e509e49-f550-4c5c-9571-ed57c5118227" alt="output" width="300"/><br>
+      A detailed diorama of a rural landscape featuring a horse-drawn carriage moving along a dirt path
+    </td>
+  </tr>
+</table>
 
 ---
 
