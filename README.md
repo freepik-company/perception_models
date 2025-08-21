@@ -194,6 +194,28 @@ PLM-Video-Human is a collection of human-annotated resources for training Vision
 
 <table>
   <tr>
+    <td colspan="2" align="center"><strong>FGQA</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://github.com/user-attachments/assets/4f5c6c5e-687d-49df-9bf8-db9ec7f1f281" alt="fgqa" width="500"/>
+    </td>
+  </tr>
+  <tr>
+    <th>Question</th>
+    <th>Answer</th>
+  </tr>
+  <tr>
+    <td>In what direction do you move the tool while removing the shell?</td>
+    <td>Both clockwise and anticlockwise.</td>
+  </tr>
+</table>
+
+<table>
+   <tr>
+    <td colspan="2" align="center"><strong>STC</strong></td>
+  </tr>
+  <tr>
     <td colspan="2" align="center">
       <img src="https://github.com/user-attachments/assets/a2a129c7-c1e9-47b5-a3b4-fc96a237a9fb" alt="stc" width="500"/>
     </td>
