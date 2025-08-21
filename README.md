@@ -10,7 +10,7 @@ This repo is the home to the state-of-the-art for image and video _perception_: 
 > 
 > [Perception Language Model](#perception-language-model-plm)
 >
-> [Datasets Release](#datasets-releases)
+> [Dataset Releases](#dataset-releases)
 
 ## Updates 
 * **[Jul-14-25]:** PerceptionLM is now available in [Hugging Face transformers](https://huggingface.co/docs/transformers/main/en/model_doc/perception_lm). :fire::fire:
@@ -167,7 +167,7 @@ PLM releases models in three different sizes (1B, 3B and 8B).
 > [!TIP]
 > See [`apps/plm/README.md`](apps/plm/README.md) for details and how to get started!
 
-## Datasets Releases
+## Dataset Releases
 
 
 ### 🎥 [PE-Video-Dataset (PVD)](https://huggingface.co/datasets/facebook/PE-Video)
