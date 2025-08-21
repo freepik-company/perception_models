@@ -192,6 +192,42 @@ PLM-Video-Human is a collection of human-annotated resources for training Vision
 🔹 [**RCap**](https://huggingface.co/datasets/facebook/PLM-Video-Human#region-video-captioning-rcap) — Region Video Captioning  
 🔹 [**RDCap**](https://huggingface.co/datasets/facebook/PLM-Video-Human#region-dense-temporal-captioning-rdcap) — Region Dense Temporal Captioning  
 
+<table>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://github.com/user-attachments/assets/a2a129c7-c1e9-47b5-a3b4-fc96a237a9fb" alt="stc" width="500"/>
+    </td>
+  </tr>
+  <tr>
+    <th>Time (s) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>[0, 4]</td>
+    <td>The masked subject is a young boy wearing a red jacket and gray pants. He is grasping a monkey bar–like activity in a playground.</td>
+  </tr>
+  <tr>
+    <td>[5, 14]</td>
+    <td>He lets go of his hands and runs to the right side of the frame.</td>
+  </tr>
+  <tr>
+    <td>[15, 30]</td>
+    <td>The subject is out of frame.</td>
+  </tr>
+  <tr>
+    <td>[31, 45]</td>
+    <td>The subject runs back into the frame toward the higher monkey bar in the playground.</td>
+  </tr>
+  <tr>
+    <td>[46, 74]</td>
+    <td>He jumps underneath the metal bar and looks up at it. A man wearing a white polo runs toward the subject.</td>
+  </tr>
+  <tr>
+    <td>[75, 116]</td>
+    <td>The man in the white polo lifts the subject upward so he can grasp the higher metal bar. The subject holds onto the bar and hangs from it.</td>
+  </tr>
+</table>
+
 ---
 
 ### 🤖 Auto-Generated Datasets
