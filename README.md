@@ -9,6 +9,8 @@ This repo is the home to the state-of-the-art for image and video _perception_: 
 > [Perception Encoder](#perception-encoder-pe)
 > 
 > [Perception Language Model](#perception-language-model-plm)
+>
+> [Datasets Release](#datasets-releases)
 
 ## Updates 
 * **[Jul-14-25]:** PerceptionLM is now available in [Hugging Face transformers](https://huggingface.co/docs/transformers/main/en/model_doc/perception_lm). :fire::fire:
@@ -19,7 +21,7 @@ This repo is the home to the state-of-the-art for image and video _perception_: 
 
 
 ## Perception Encoder (PE)
-
+[![Data](https://img.shields.io/badge/Download-PE%20Data-ffcc00.svg)](https://huggingface.co/datasets/facebook/PE-Video)
 [![Hugging Face Collection](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Collection-blue)](https://huggingface.co/collections/facebook/perception-encoder-67f977c9a65ca5895a7f6ba1)
 [![Paper](https://img.shields.io/badge/Technical%20Report-Perception%20Encoder-b31b1b.svg)](https://ai.meta.com/research/publications/perception-encoder-the-best-visual-embeddings-are-not-at-the-output-of-the-network)
 [![Paper](https://img.shields.io/badge/arXiv-2504.13181-brightgreen.svg?style=flat-square)](https://arxiv.org/abs/2504.13181)
@@ -118,6 +120,7 @@ print("Label probs:", text_probs)  # prints: [[0.0, 0.0, 1.0]]
 
 
 ## Perception Language Model (PLM)
+[![Data](https://img.shields.io/badge/Download-PLM%20Data-ffcc00.svg)](https://huggingface.co/datasets/facebook/PLM-Video-Human)
 [![Hugging Face Collection](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Collection-blue)](https://huggingface.co/collections/facebook/perception-lm-67f9783f171948c383ee7498)
 [![Paper](https://img.shields.io/badge/Technical%20Report-PerceptionLM-b31b1b.svg)](https://ai.meta.com/research/publications/perceptionlm-open-access-data-and-models-for-detailed-visual-understanding)
 [![Paper](https://img.shields.io/badge/arXiv-2504.13180-brightgreen.svg?style=flat-square)](https://arxiv.org/abs/2504.13180)
@@ -163,6 +166,40 @@ PLM releases models in three different sizes (1B, 3B and 8B).
 
 > [!TIP]
 > See [`apps/plm/README.md`](apps/plm/README.md) for details and how to get started!
+
+## Datasets releases
+
+
+### 🎥 [PE-Video-Dataset (PVD)](https://huggingface.co/datasets/facebook/PE-Video)
+
+
+PVD comprises 1M high quality and diverse videos. Among them, 120K videos are accompanied by automated and human-verified annotations. and all videos are accompanied with video description and keywords. The videos are motion-centered, covering both first-person and third-person views with a wide coverage of scenes. 
+
+🔹 [**PVD**](https://huggingface.co/datasets/facebook/PE-Video) - 1M High-Quality Human Annotated Video Dataset 
+
+---
+
+### 🎥 [PLM-Video-Human](https://huggingface.co/datasets/facebook/PLM-Video-Human)
+
+PLM-Video-Human is a collection of human-annotated resources for training Vision Language Models, focused on detailed video understanding. Training tasks include:
+
+🔹 [**FGQA**](https://huggingface.co/datasets/facebook/PLM-Video-Human#fine-grained-question-answering-fgqa) — Fine-Grained Question Answering  
+🔹 [**RTLoc**](https://huggingface.co/datasets/facebook/PLM-Video-Human#region-temporal-localization-rtloc) — Region-Temporal Localization  
+🔹 [**RCap**](https://huggingface.co/datasets/facebook/PLM-Video-Human#region-video-captioning-rcap) — Region Video Captioning  
+🔹 [**RDCap**](https://huggingface.co/datasets/facebook/PLM-Video-Human#region-dense-temporal-captioning-rdcap) — Region Dense Temporal Captioning  
+
+---
+
+### 🤖 Auto-Generated Datasets
+
+Sythetic image/video captions and QAs used in PLM, please refer to the paper, Section 3 (PLM), for more details. The sythetic annotations covers: SA1B, Openimages, Obejct365, ArxivQA, UCSF, PDFAcc, YT-1B, Ego4d with captions, YT-1B with MCQAs and Ego4d with QAs.
+
+🖼️ [**PLM-Image-Auto**](https://huggingface.co/datasets/facebook/PLM-Image-Auto) — Automatically generated image datasets
+
+📹 [**PLM-Video-Auto**](https://huggingface.co/datasets/facebook/PLM-Video-Auto) — Automatically generated video datasets
+
+
+---
 
 ## Installation :wrench:
 ```shell
