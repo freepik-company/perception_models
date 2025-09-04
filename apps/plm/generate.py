@@ -297,8 +297,9 @@ class PackedCausalTransformerGenerator:
                 self.device
             )
             assert tokens.shape[0] == 1
-            offsets = torch.roll(lengths.cpu(), shifts=1, dims=-1).numpy()
+            offsets = torch.roll(lengths.cpu(), shifts=1, dims=-1)
             offsets[0] = 0
+            offsets = torch.cumsum(offsets, dim=0).numpy()
             num_chunks_seq = 0
             image_id_offset = 0
             for image_id, offset in enumerate(offsets):
@@ -334,14 +335,15 @@ class PackedCausalTransformerGenerator:
         images, image_pos_index, num_chunks = self.prepare_media_inputs(
             tokens, lengths, images, image_patch_text_ids, num_image_chunks
         )
+        is_batched = lengths.size(0) > 1
         prefill_out = self.model.forward(
             tokens,
             tok_idx=self.prefill_tok_id,
-            mask="causal",
+            mask=self.prefill_mask if is_batched else "causal",
             images=images,
             image_pos_index=image_pos_index,
             num_chunks=num_chunks,
-            attn_impl="sdpa",
+            attn_impl="flex_attention" if is_batched else "sdpa",
         )
         self.setup_generation(lengths=lengths)
         return prefill_out
