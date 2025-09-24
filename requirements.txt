@@ -24,7 +24,7 @@ opencv-python==4.11.0.86
 pycocoevalcap==1.2
 scikit-learn==1.6.1
 sentencepiece==0.2.0
-tokenizers==0.21.1
+tokenizers
 webdataset
 fsspec
 datatrove
