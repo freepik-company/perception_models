@@ -25,7 +25,7 @@ pycocoevalcap==1.2
 scikit-learn==1.6.1
 sentencepiece==0.2.0
 tokenizers==0.21.1
-webdataset==0.2.111
+webdataset
 fsspec
 datatrove
 ftfy
